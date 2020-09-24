@@ -17,6 +17,11 @@
  *
  * @package WordPress
  */
+// Checking this solution
+if ( ! empty( $_SERVER[‘HTTP_X_FORWARDED_HOST’] ) ) {
+$_SERVER[‘HTTP_HOST’] = $_SERVER[‘HTTP_X_FORWARDED_HOST’];
+}
+
 
 //Using environment variables for DB connection information
 
