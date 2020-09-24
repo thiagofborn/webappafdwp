@@ -116,8 +116,8 @@ define('WP_SITEURL', 'http://'. filter_input(INPUT_SERVER, 'HTTP_HOST', FILTER_S
 define('WP_CONTENT_URL', '/wp-content');
 define('DOMAIN_CURRENT_SITE', filter_input(INPUT_SERVER, 'HTTP_HOST', FILTER_SANITIZE_STRING));
 */
-define('WP_SITEURL', 'https://www.wastelandweb.com/' );
-define('WP_HOME', 'https://www.wastelandweb.com/');
+define('WP_SITEURL', 'http://www.wastelandweb.com/' );
+define('WP_HOME', 'http://www.wastelandweb.com/');
 define('WP_CONTENT_URL', '/wp-content');
 define('DOMAIN_CURRENT_SITE', filter_input(INPUT_SERVER, 'HTTP_HOST', FILTER_SANITIZE_STRING));
 
