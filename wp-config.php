@@ -18,11 +18,12 @@
  * @package WordPress
  */
 // Checking this solution - 18:49 24/09/2020
-
-
+// Did not work
+/*
 if ( ! empty( $_SERVER['HTTP_X_FORWARDED_HOST'] ) ) {
     $_SERVER['HTTP_HOST'] = $_SERVER['HTTP_X_FORWARDED_HOST'];
 }
+*/
 
 
 //Using environment variables for DB connection information
@@ -118,10 +119,12 @@ define('WP_DEBUG', false);
 
 //Relative URLs for swapping across app service deployment slots 
 
-define('WP_HOME', 'http://'. filter_input(INPUT_SERVER, 'HTTP_HOST', FILTER_SANITIZE_STRING));
-define('WP_SITEURL', 'http://'. filter_input(INPUT_SERVER, 'HTTP_HOST', FILTER_SANITIZE_STRING));
+//define('WP_HOME', 'http://'. filter_input(INPUT_SERVER, 'HTTP_HOST', FILTER_SANITIZE_STRING));
+define('WP_HOME', 'http://www.wastelandweb.com');
+//define('WP_SITEURL', 'http://'. filter_input(INPUT_SERVER, 'HTTP_HOST', FILTER_SANITIZE_STRING));
+define('WP_SITEURL', 'http://www.wastelandweb.com');
 define('WP_CONTENT_URL', '/wp-content');
-define('DOMAIN_CURRENT_SITE', filter_input(INPUT_SERVER, 'HTTP_HOST', FILTER_SANITIZE_STRING));
+//define('DOMAIN_CURRENT_SITE', filter_input(INPUT_SERVER, 'HTTP_HOST', FILTER_SANITIZE_STRING));
 
 /** Absolute path to the WordPress directory. */
 if ( !defined('ABSPATH') )
