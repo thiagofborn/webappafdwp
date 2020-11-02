@@ -118,6 +118,8 @@ define('WP_DEBUG', true);
 /* That's all, stop editing! Happy blogging. */
 #define('MULTISITE', true);
 
+define( 'MYSQL_CLIENT_FLAGS', MYSQLI_CLIENT_SSL | MYSQLI_CLIENT_SSL_DONT_VERIFY_SERVER_CERT ); 
+define( 'MYSQL_SSL_CA', getenv('MYSQL_SSL_CA'));
 
 //Relative URLs for swapping across app service deployment slots 
 
