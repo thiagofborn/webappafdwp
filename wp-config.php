@@ -116,6 +116,13 @@ $table_prefix  = 'wp_';
 define('WP_DEBUG', true);
 
 /* That's all, stop editing! Happy blogging. */
+define('MULTISITE', true);
+define('SUBDOMAIN_INSTALL', true);
+define('DOMAIN_CURRENT_SITE', 'www.wastelandweb.com');
+define('PATH_CURRENT_SITE', '/');
+define('SITE_ID_CURRENT_SITE', 1);
+define('BLOG_ID_CURRENT_SITE', 1);
+
 //Relative URLs for swapping across app service deployment slots 
 
 #define('WP_HOME', 'http://'. filter_input(INPUT_SERVER, 'HTTP_HOST', FILTER_SANITIZE_STRING));
