@@ -116,6 +116,7 @@ $table_prefix  = 'wp_';
 define('WP_DEBUG', false);
 
 /* That's all, stop editing! Happy blogging. */
+define('WP_ALLOW_MULTISITE', true);
 
 //Relative URLs for swapping across app service deployment slots 
 
