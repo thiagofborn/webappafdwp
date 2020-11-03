@@ -12,6 +12,18 @@ In short:
 3. Azure Front Door - Used for cache and to associated with a WAF
 4. Update internal links via SQL
 
+## Update internal links via SQL UPDATE
+
+The links where build pointing directly to the "https://wastelandweb.azurewebsites.net", and this link is from the Azure Web App. I would like to setup the links correctly to point to my custom domain. The custom domain is defined at my Azure Front Door service, and it has WAF enabled.
+
+For that, I will need to update the links inside the MySQL DB. One way to do that is:
+
+Example:
+
+```sql
+UPDATE wp_posts SET post_content=REPLACE (post_content, "wastelandweb.azurewebsites.net/blog", "www.wastelandweb.com/blog")
+```
+
 ## References
 
 Some references and tests. What helped and what did not.
