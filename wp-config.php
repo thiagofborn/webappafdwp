@@ -116,7 +116,11 @@ $table_prefix  = 'wp_';
 define('WP_DEBUG', true);
 
 /* That's all, stop editing! Happy blogging. */
+# The next line did not work
 #define('MULTISITE', true);
+
+define( 'WP_ALLOW_MULTISITE', true );
+
 
 define( 'MYSQL_CLIENT_FLAGS', MYSQLI_CLIENT_SSL | MYSQLI_CLIENT_SSL_DONT_VERIFY_SERVER_CERT ); 
 define( 'MYSQL_SSL_CA', getenv('MYSQL_SSL_CA'));
