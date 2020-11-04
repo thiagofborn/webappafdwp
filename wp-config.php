@@ -118,7 +118,7 @@ define('WP_DEBUG', true);
 /* That's all, stop editing! Happy blogging. */
 # The next line did not work
 #define('MULTISITE', true);
-
+## Back to the old version.
 define( 'WP_ALLOW_MULTISITE', true );
 
 
