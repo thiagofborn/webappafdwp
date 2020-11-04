@@ -28,8 +28,8 @@ UPDATE wp_posts SET post_content=REPLACE (post_content, "wastelandweb.azurewebsi
 
 Some references and tests. What helped and what did not.
 
-Multisite - <https://github.com/uglide/azure-content/blob/master/articles/app-service-web/web-sites-php-convert-wordpress-multisite.md>
-Web site used for tests - <https://www.wastelandweb.com>
+1. Multisite - <https://github.com/uglide/azure-content/blob/master/articles/app-service-web/web-sites-php-convert-wordpress-multisite.md>
+2. Web site used for tests - <https://www.wastelandweb.com>
 
 ## Deploy this solution
 
